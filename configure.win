@@ -112,7 +112,7 @@ then
 	echo "note: Found the flag IGNORE_VISUALSTUDIO. Build will be made with gcc, Mono and xbuild"
 fi
 
-VS_COMNTOOLS=${VS120COMNTOOLS}
+VS_COMNTOOLS=${VS140COMNTOOLS}
 # echo "$VS_COMNTOOLS"
 if [ "$VS_COMNTOOLS" = "" ]
 then
