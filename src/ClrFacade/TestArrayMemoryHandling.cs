@@ -1,4 +1,11 @@
-﻿using System;
+﻿
+
+
+
+
+
+
+using System;
 using System.Reflection;
 using Rclr;
 
@@ -13,6 +20,7 @@ namespace Rclr
     public class TestArrayMemoryHandling
     {
 
+
         public object[] FieldArray_object;
         public static object[] CreateArray_object(int size) 
         {
@@ -24,6 +32,7 @@ namespace Rclr
 			for(int i = 0; i < result.Length; i++) result[i] = value;
 			return result;
         }
+
 
         public string[] FieldArray_string;
         public static string[] CreateArray_string(int size) 
@@ -37,6 +46,7 @@ namespace Rclr
 			return result;
         }
 
+
         public double[] FieldArray_double;
         public static double[] CreateArray_double(int size) 
         {
@@ -48,6 +58,7 @@ namespace Rclr
 			for(int i = 0; i < result.Length; i++) result[i] = value;
 			return result;
         }
+
 
         public float[] FieldArray_float;
         public static float[] CreateArray_float(int size) 
@@ -61,6 +72,7 @@ namespace Rclr
 			return result;
         }
 
+
         public int[] FieldArray_int;
         public static int[] CreateArray_int(int size) 
         {
@@ -72,6 +84,7 @@ namespace Rclr
 			for(int i = 0; i < result.Length; i++) result[i] = value;
 			return result;
         }
+
 
         public long[] FieldArray_long;
         public static long[] CreateArray_long(int size) 
@@ -85,6 +98,7 @@ namespace Rclr
 			return result;
         }
 
+
         public bool[] FieldArray_bool;
         public static bool[] CreateArray_bool(int size) 
         {
@@ -96,6 +110,7 @@ namespace Rclr
 			for(int i = 0; i < result.Length; i++) result[i] = value;
 			return result;
         }
+
 
         public DateTime[] FieldArray_DateTime;
         public static DateTime[] CreateArray_DateTime(int size) 
@@ -109,6 +124,7 @@ namespace Rclr
 			return result;
         }
 
+
         public TimeSpan[] FieldArray_TimeSpan;
         public static TimeSpan[] CreateArray_TimeSpan(int size) 
         {
@@ -120,6 +136,7 @@ namespace Rclr
 			for(int i = 0; i < result.Length; i++) result[i] = value;
 			return result;
         }
+
 
         public byte[] FieldArray_byte;
         public static byte[] CreateArray_byte(int size) 
@@ -133,6 +150,7 @@ namespace Rclr
 			return result;
         }
 
+
         public char[] FieldArray_char;
         public static char[] CreateArray_char(int size) 
         {
@@ -145,6 +163,7 @@ namespace Rclr
 			return result;
         }
 
+
         public Type[] FieldArray_Type;
         public static Type[] CreateArray_Type(int size) 
         {
@@ -156,6 +175,7 @@ namespace Rclr
 			for(int i = 0; i < result.Length; i++) result[i] = value;
 			return result;
         }
+
 		// To test the type of empty vectors:
         public static bool CheckElementType(Array array, Type expectedElementType)
         {
