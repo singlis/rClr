@@ -1,7 +1,30 @@
 rClr
 ====
+# Scott's Notes for building this package on VS2017
+## Prerequisites
+ * VS2017
+ * RTools https://cran.r-project.org/bin/windows/Rtools/
+ * MikTeX (full package) https://miktex.org/download
+ * R
+ * install.packages(c('testthat','R6','plyr','formatR','xtable'))
 
-R package for accessing .NET
+## Building
+ * Open a VS2017 Developer Command Prompt (Very important!! Regular cmd prompt does not work)
+ * cd to the parent directory of the rClr enlistment
+ * Type the following:
+```
+R CMD check .\rClr
+```
+If everything passes, you can now build the binary package by typing:
+```
+R CMD INSTALL .\rClr
+R CMD INSTALL --build .\rClr
+```
+This will generate a rClr<version>.zip file.
+
+## Errors
+It is more than likely you will hit an error due to a missing configiration or dependency that I have missed. Please look at the install.out file as this will give a lot of good information on what the cause of the error is.
+
 
 Accessing the Common Language Runtime (.NET or Mono) from the R statistical software, in-process.
 
